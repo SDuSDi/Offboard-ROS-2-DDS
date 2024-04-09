@@ -1,0 +1,15 @@
+/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/ament_index/resource_index/package_run_dependencies/drone
+/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/ament_index/resource_index/parent_prefix_path/drone
+/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/environment/ament_prefix_path.sh
+/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/environment/ament_prefix_path.dsv
+/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/environment/path.sh
+/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/environment/path.dsv
+/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/local_setup.bash
+/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/local_setup.sh
+/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/local_setup.zsh
+/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/local_setup.dsv
+/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/package.dsv
+/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/ament_index/resource_index/packages/drone
+/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/cmake/droneConfig.cmake
+/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/cmake/droneConfig-version.cmake
+/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/package.xml

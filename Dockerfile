@@ -82,15 +82,25 @@ RUN wget https://d176tv9ibo4jno.cloudfront.net/latest/QGroundControl.AppImage &&
 
 # Install utilities
 RUN apt-get update  && \
-    apt-get install -y sudo && \
+    #apt-get install -y sudo && \
     apt-get install -y vim && \
     apt-get install -y tmux && \
-    apt-get install -y tmuxinator && \
-    apt-get install -y psmisc
+    #apt-get install -y psmisc && \
+    apt-get install -y tmuxinator
 
 ######################################################################################################
 #                                            STARTUP                                                 #
 ######################################################################################################
 
+# Set starting directory
 WORKDIR /root
-ENTRYPOINT ["bash"]
+
+# Copy and set up the entrypoint script and tmux configs
+COPY ./entrypoint.sh .
+RUN chmod +x entrypoint.sh
+
+COPY ./tmux ./tmux
+RUN chmod +x ./tmux/*.sh
+
+# Set entrypoint as startup script
+ENTRYPOINT ["./entrypoint.sh"]

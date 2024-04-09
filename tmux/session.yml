@@ -1,0 +1,11 @@
+name: Offboard ROS 2 + DDS
+root: ./
+startup_window:
+windows:
+  - hello-world:
+      layout: tiled
+      panes:
+        - 
+        - 
+        -
+        - 

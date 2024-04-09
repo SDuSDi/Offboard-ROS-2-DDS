@@ -1,0 +1,20 @@
+[0.006s] Invoking command in '/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/build/drone': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/bmartinez/.local/bin/cmake --build /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/build/drone -- -j20 -l20
+[0.045s] Invoked command in '/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/build/drone' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/bmartinez/.local/bin/cmake --build /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/build/drone -- -j20 -l20
+[0.117s] Invoking command in '/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/build/drone': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/bmartinez/.local/bin/cmake --install /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/build/drone
+[0.145s] -- Install configuration: ""
+[0.146s] -- Up-to-date: /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/ament_index/resource_index/package_run_dependencies/drone
+[0.146s] -- Up-to-date: /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/ament_index/resource_index/parent_prefix_path/drone
+[0.146s] -- Up-to-date: /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/environment/ament_prefix_path.sh
+[0.146s] -- Up-to-date: /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/environment/ament_prefix_path.dsv
+[0.146s] -- Up-to-date: /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/environment/path.sh
+[0.146s] -- Up-to-date: /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/environment/path.dsv
+[0.146s] -- Up-to-date: /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/local_setup.bash
+[0.146s] -- Up-to-date: /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/local_setup.sh
+[0.146s] -- Up-to-date: /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/local_setup.zsh
+[0.146s] -- Up-to-date: /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/local_setup.dsv
+[0.146s] -- Up-to-date: /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/package.dsv
+[0.146s] -- Up-to-date: /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/ament_index/resource_index/packages/drone
+[0.146s] -- Up-to-date: /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/cmake/droneConfig.cmake
+[0.146s] -- Up-to-date: /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/cmake/droneConfig-version.cmake
+[0.146s] -- Up-to-date: /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/install/drone/share/drone/package.xml
+[0.149s] Invoked command in '/home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/build/drone' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/bmartinez/.local/bin/cmake --install /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace/build/drone
