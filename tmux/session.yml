@@ -13,7 +13,7 @@ windows:
   - QGroundControl:
       layout: tiled
       panes:
-        - su user; /home/user/QGroundControl.AppImage
+        - su -c "/home/user/QGroundControl.AppImage" user
   - control:
       layout: tiled
       panes:
