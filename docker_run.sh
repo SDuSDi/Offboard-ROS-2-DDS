@@ -1,0 +1,2 @@
+docker run -it --rm -v /home/bmartinez/workspace/micro_ros2/braismtnez-ros2sim/workspace:/root/workspace --net=host --env DISPLAY=$DISPLAY --privileged prueba
+# Build command -> docker build -t prueba ./workspace/micro_ros2/braismtnez-ros2sim/.

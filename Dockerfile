@@ -27,7 +27,8 @@ RUN source /opt/ros/$ROS_DISTRO/setup.bash && \
 
 # Install pip
 RUN apt-get update  && \
-    apt-get install -y python3-pip
+    apt-get install -y python3-pip && \
+    pip install colcon-clean
 
 # Build micro-ROS tools and source them
 RUN source /opt/ros/$ROS_DISTRO/setup.bash && \
@@ -74,6 +75,14 @@ RUN cd /root/PX4-Autopilot && \
 
 ######################################################################################################
 
+# Set work directory for QGroundControl
+WORKDIR /home/user
+RUN apt-get install -y fuse libpulse-mainloop-glib0 libfuse2
+
+# Fix problems with QGroundControl
+RUN usermod -a -G dialout user && \
+    apt-get remove modemmanager
+
 # Download and install QGroundControl
 RUN wget https://d176tv9ibo4jno.cloudfront.net/latest/QGroundControl.AppImage && \
     chmod +x QGroundControl.AppImage
@@ -82,10 +91,10 @@ RUN wget https://d176tv9ibo4jno.cloudfront.net/latest/QGroundControl.AppImage &&
 
 # Install utilities
 RUN apt-get update  && \
-    #apt-get install -y sudo && \
+    apt-get install -y x11-apps && \
     apt-get install -y vim && \
     apt-get install -y tmux && \
-    #apt-get install -y psmisc && \
+    apt-get install -y kmod && \
     apt-get install -y tmuxinator
 
 ######################################################################################################
@@ -94,6 +103,9 @@ RUN apt-get update  && \
 
 # Set starting directory
 WORKDIR /root
+
+# Create user workspace
+RUN mkdir workspace
 
 # Copy and set up the entrypoint script and tmux configs
 COPY ./entrypoint.sh .

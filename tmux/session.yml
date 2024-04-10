@@ -1,8 +1,20 @@
 name: Offboard ROS 2 + DDS
 root: ./
-startup_window:
+startup_window: control
 windows:
-  - hello-world:
+  - gazebo:
+      layout: tiled
+      panes:
+        - cd PX4-Autopilot && make px4_sitl gazebo
+  - DDS:
+      layout: tiled
+      panes:
+        - ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888
+  - QGroundControl:
+      layout: tiled
+      panes:
+        - su user; /home/user/QGroundControl.AppImage
+  - control:
       layout: tiled
       panes:
         - 
