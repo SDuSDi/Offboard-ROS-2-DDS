@@ -18,10 +18,15 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
+find_package(px4_msgs REQUIRED)
+find_package(PahoMqttCpp REQUIRED)
+find_package(nlohmann_json REQUIRED)
 
-add_executable(node src/offb_nope.cpp) 
-ament_target_dependencies(node rclcpp std_msgs)
+## Link CPP source code to main code
+file(GLOB SOURCES src/mqtt.cpp)
+
+add_executable(node src/offb_node.cpp) 
+ament_target_dependencies(node rclcpp px4_msgs nlohmann_json PahoMqttCpp) #paho-mqtt3a paho-mqttpp3
 
 install(TARGETS
   node

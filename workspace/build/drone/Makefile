@@ -115,8 +115,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -206,32 +206,32 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
-src/offb_nope.o: src/offb_nope.cpp.o
+src/offb_node.o: src/offb_node.cpp.o
 
-.PHONY : src/offb_nope.o
+.PHONY : src/offb_node.o
 
 # target to build an object file
-src/offb_nope.cpp.o:
-	$(MAKE) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/src/offb_nope.cpp.o
-.PHONY : src/offb_nope.cpp.o
+src/offb_node.cpp.o:
+	$(MAKE) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/src/offb_node.cpp.o
+.PHONY : src/offb_node.cpp.o
 
-src/offb_nope.i: src/offb_nope.cpp.i
+src/offb_node.i: src/offb_node.cpp.i
 
-.PHONY : src/offb_nope.i
+.PHONY : src/offb_node.i
 
 # target to preprocess a source file
-src/offb_nope.cpp.i:
-	$(MAKE) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/src/offb_nope.cpp.i
-.PHONY : src/offb_nope.cpp.i
+src/offb_node.cpp.i:
+	$(MAKE) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/src/offb_node.cpp.i
+.PHONY : src/offb_node.cpp.i
 
-src/offb_nope.s: src/offb_nope.cpp.s
+src/offb_node.s: src/offb_node.cpp.s
 
-.PHONY : src/offb_nope.s
+.PHONY : src/offb_node.s
 
 # target to generate assembly for a file
-src/offb_nope.cpp.s:
-	$(MAKE) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/src/offb_nope.cpp.s
-.PHONY : src/offb_nope.cpp.s
+src/offb_node.cpp.s:
+	$(MAKE) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/src/offb_node.cpp.s
+.PHONY : src/offb_node.cpp.s
 
 # Help Target
 help:
@@ -249,9 +249,9 @@ help:
 	@echo "... node"
 	@echo "... drone_uninstall"
 	@echo "... uninstall"
-	@echo "... src/offb_nope.o"
-	@echo "... src/offb_nope.i"
-	@echo "... src/offb_nope.s"
+	@echo "... src/offb_node.o"
+	@echo "... src/offb_node.i"
+	@echo "... src/offb_node.s"
 .PHONY : help
 
 

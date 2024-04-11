@@ -12,6 +12,37 @@ USER root
 #                                            BUILD                                                   #
 ######################################################################################################
 
+WORKDIR /root
+
+# Instalation of prerequisites for MQTT
+RUN apt-get update && \
+    apt-get install -y build-essential gcc make cmake cmake-gui cmake-curses-gui && \
+    apt-get install -y libssl-dev && \
+    apt-get install -y doxygen graphviz && \
+    apt install -y git-all
+
+# Install Paho MQTT C and build it
+RUN git clone https://github.com/eclipse/paho.mqtt.c.git && \
+    cd paho.mqtt.c && \
+    git checkout v1.3.13 && \
+    cmake -Bbuild -H. -DPAHO_ENABLE_TESTING=OFF -DPAHO_BUILD_STATIC=ON -DPAHO_WITH_SSL=ON -DPAHO_HIGH_PERFORMANCE=ON && \
+    cmake --build build/ --target install && \
+    ldconfig
+
+# Install Paho MQTT C++ and build it
+RUN git clone https://github.com/eclipse/paho.mqtt.cpp && \
+    cd paho.mqtt.cpp && \
+    cmake -Bbuild -H. -DPAHO_WITH_MQTT_C=OFF -DPAHO_BUILD_STATIC=ON -DPAHO_BUILD_DOCUMENTATION=ON -DPAHO_BUILD_SAMPLES=ON && \
+    cmake --build build/ --target install && \
+    ldconfig
+
+######################################################################################################
+
+# Install nlohmann JSON library
+RUN apt-get update && apt-get install nlohmann-json3-dev
+
+######################################################################################################
+
 # Add the ROS 2 underlay source to the .bashrc startup file
 RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> ~/.bashrc
 

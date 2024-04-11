@@ -1,0 +1,74 @@
+In file included from [01m[K/root/workspace/src/drone/src/offb_node.cpp:9[m[K:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::on_failure(const mqtt::token&)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:89:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktok[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   89 |  void on_failure([01;35m[Kconst mqtt::token& tok[m[K) override {
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::on_success(const mqtt::token&)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktok[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   98 |  void on_success([01;35m[Kconst mqtt::token& tok[m[K) override {}
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::connected(const string&)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:101:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcause[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  101 |  void connected([01;35m[Kconst std::string& cause[m[K) override {
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::delivery_complete(mqtt::delivery_token_ptr)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:131:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktoken[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  131 |  void delivery_complete([01;35m[Kmqtt::delivery_token_ptr token[m[K) override {}
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:[m[K At global scope:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:24:23:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleCommand[m[K’ was not declared in this scope; did you mean ‘[01m[Kpx4_msgs::msg::VehicleCommand[m[K’?
+   24 |     rclcpp::Publisher<[01;31m[KVehicleCommand[m[K>::SharedPtr vehicle_commander;
+      |                       [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                       [32m[Kpx4_msgs::msg::VehicleCommand[m[K
+In file included from [01m[K/root/microros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_command.hpp:7[m[K,
+                 from [01m[K/root/workspace/src/drone/src/offb_node.cpp:3[m[K:
+[01m[K/root/microros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__struct.hpp:613:7:[m[K [01;36m[Knote: [m[K‘[01m[Kpx4_msgs::msg::VehicleCommand[m[K’ declared here
+  613 | using [01;36m[KVehicleCommand[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:24:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   24 |     rclcpp::Publisher<VehicleCommand[01;31m[K>[m[K::SharedPtr vehicle_commander;
+      |                                     [01;31m[K^[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:24:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   24 |     rclcpp::Publisher<VehicleCommand>::[01;31m[KSharedPtr[m[K vehicle_commander;
+      |                                        [01;31m[K^~~~~~~~~[m[K
+      |                                                 [32m[K;[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:24:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_commander[m[K’ does not name a type
+   24 |     rclcpp::Publisher<VehicleCommand>::SharedPtr [01;31m[Kvehicle_commander[m[K;
+      |                                                  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:26:10:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KOffboardControl::[m[K’ on member ‘[01m[Karm[m[K’ [[01;31m[K-fpermissive[m[K]
+   26 |     void [01;31m[KOffboardControl[m[K::arm(){
+      |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:26:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid OffboardControl::arm()[m[K’ cannot be overloaded with ‘[01m[Kvoid OffboardControl::arm()[m[K’
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:19:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid OffboardControl::arm()[m[K’
+   19 |     void [01;36m[Karm[m[K();
+      |          [01;36m[K^~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:[m[K In constructor ‘[01m[KOffboardControl::OffboardControl()[m[K’:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:17:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_commander[m[K’ was not declared in this scope
+   17 |         [01;31m[Kvehicle_commander[m[K = this -> create_publisher<VehicleCommand>("/fmu/in/vehicle_command",10);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:17:54:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleCommand[m[K’ was not declared in this scope; did you mean ‘[01m[Kpx4_msgs::msg::VehicleCommand[m[K’?
+   17 |         vehicle_commander = this -> create_publisher<[01;31m[KVehicleCommand[m[K>("/fmu/in/vehicle_command",10);
+      |                                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                                      [32m[Kpx4_msgs::msg::VehicleCommand[m[K
+In file included from [01m[K/root/microros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_command.hpp:7[m[K,
+                 from [01m[K/root/workspace/src/drone/src/offb_node.cpp:3[m[K:
+[01m[K/root/microros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__struct.hpp:613:7:[m[K [01;36m[Knote: [m[K‘[01m[Kpx4_msgs::msg::VehicleCommand[m[K’ declared here
+  613 | using [01;36m[KVehicleCommand[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:17:98:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOffboardControl::create_publisher<<expression error> >(const char [24], int)[m[K’
+   17 |         vehicle_commander = this -> create_publisher<VehicleCommand>("/fmu/in/vehicle_command",10[01;31m[K)[m[K;
+      |                                                                                                  [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/root/workspace/src/drone/src/offb_node.cpp:2[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  184 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:17:98:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   17 |         vehicle_commander = this -> create_publisher<VehicleCommand>("/fmu/in/vehicle_command",10[01;31m[K)[m[K;
+      |                                                                                                  [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/node.dir/build.make:63: CMakeFiles/node.dir/src/offb_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
