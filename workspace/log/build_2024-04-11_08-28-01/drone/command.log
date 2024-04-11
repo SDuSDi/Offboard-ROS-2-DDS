@@ -1,0 +1,6 @@
+Invoking command in '/root/workspace/build/drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /root/workspace/src/drone -DCMAKE_INSTALL_PREFIX=/root/workspace/install/drone
+Invoked command in '/root/workspace/build/drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /root/workspace/src/drone -DCMAKE_INSTALL_PREFIX=/root/workspace/install/drone
+Invoking command in '/root/workspace/build/drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/workspace/build/drone -- -j20 -l20
+Invoked command in '/root/workspace/build/drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/workspace/build/drone -- -j20 -l20
+Invoking command in '/root/workspace/build/drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /root/workspace/build/drone
+Invoked command in '/root/workspace/build/drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /root/workspace/build/drone
