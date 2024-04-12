@@ -16,16 +16,20 @@ class OffboardControl : public rclcpp::Node
 {
 public:
 
-    OffboardControl() : Node("offboard_control")
+    OffboardControl() : Node("offb_node")
     {
         offboard_controller = this -> create_publisher<OffboardControlMode>("/fmu/in/offboard_control_mode",10);
         trajectory_publisher = this -> create_publisher<TrajectorySetpoint>("/fmu/in/trajectory_setpoint",10);
         vehicle_commander = this -> create_publisher<VehicleCommand>("/fmu/in/vehicle_command",10);
 
-        rclcpp::sleep_for(std::chrono::seconds(5));
+        for (int i = 0; i < 10; i++){
+            rclcpp::sleep_for(std::chrono::seconds(1));
+            this -> publish_offboard_mode();
+            this -> publish_trajectory(0,0,2.0);
+        }
+
         this -> publish_vehicle_command(VehicleCommand::VEHICLE_CMD_DO_SET_MODE,1,6);
         this -> arm();
-        
         this -> publish_offboard_mode();
         this -> publish_trajectory(0,0,2.0);
 
@@ -46,11 +50,13 @@ private:
 };
 
 void OffboardControl::arm(){
-
+    this -> publish_vehicle_command(VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM,1);
+    RCLCPP_INFO(this -> get_logger(), "Vehicle is armed");
 }
 
 void OffboardControl::disarm(){
-
+    this -> publish_vehicle_command(VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM,0);
+    RCLCPP_INFO(this -> get_logger(), "Vehicle is disarmed");
 }
 
 void OffboardControl::publish_offboard_mode(){
