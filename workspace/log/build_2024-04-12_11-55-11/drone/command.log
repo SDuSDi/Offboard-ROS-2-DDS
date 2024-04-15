@@ -1,0 +1,2 @@
+Invoking command in '/root/workspace/build/drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/workspace/build/drone -- -j20 -l20
+Invoked command in '/root/workspace/build/drone' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/workspace/build/drone -- -j20 -l20

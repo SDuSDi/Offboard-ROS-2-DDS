@@ -1,0 +1,44 @@
+In file included from [01m[K/root/workspace/src/drone/src/offb_node.cpp:9[m[K:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::on_failure(const mqtt::token&)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:89:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktok[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   89 |  void on_failure([01;35m[Kconst mqtt::token& tok[m[K) override {
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::on_success(const mqtt::token&)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktok[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   98 |  void on_success([01;35m[Kconst mqtt::token& tok[m[K) override {}
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::connected(const string&)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:101:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcause[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  101 |  void connected([01;35m[Kconst std::string& cause[m[K) override {
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::delivery_complete(mqtt::delivery_token_ptr)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:131:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktoken[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  131 |  void delivery_complete([01;35m[Kmqtt::delivery_token_ptr token[m[K) override {}
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:[m[K At global scope:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:14:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kfloat32[m[K’ does not name a type; did you mean ‘[01m[Kfloat_t[m[K’?
+   14 | [01;31m[Kfloat32[m[K drone_pos[3];
+      | [01;31m[K^~~~~~~[m[K
+      | [32m[Kfloat_t[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:[m[K In constructor ‘[01m[KOffboardControl::OffboardControl()[m[K’:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:26:133:[m[K [01;31m[Kerror: [m[K‘[01m[Kodometry_cb[m[K’ is not a member of ‘[01m[KOffboardControl[m[K’
+   26 | tion<VehicleOdometry>("/fmu/out/vehicle_odometry",10, std::bind(&OffboardControl::[01;31m[Kodometry_cb[m[K, this, _1)); //TODO: QUE COÑO HACE ESTO????
+      |                                                                                   [01;31m[K^~~~~~~~~~~[m[K
+
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:26:152:[m[K [01;31m[Kerror: [m[K‘[01m[K_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::placeholders::_1[m[K’?
+   26 | y>("/fmu/out/vehicle_odometry",10, std::bind(&OffboardControl::odometry_cb, this, [01;31m[K_1[m[K)); //TODO: QUE COÑO HACE ESTO????
+      |                                                                                   [01;31m[K^~[m[K
+      |                                                                                   [32m[Kstd::placeholders::_1[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/context.hpp:19[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/contexts/default_context.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:32[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/root/workspace/src/drone/src/offb_node.cpp:2[m[K:
+[01m[K/usr/include/c++/9/functional:211:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::placeholders::_1[m[K’ declared here
+  211 |     extern const _Placeholder<1> [01;36m[K_1[m[K;
+      |                                  [01;36m[K^~[m[K
+make[2]: *** [CMakeFiles/node.dir/build.make:63: CMakeFiles/node.dir/src/offb_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

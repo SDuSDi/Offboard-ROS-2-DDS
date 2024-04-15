@@ -1,0 +1,43 @@
+[0.013s] Invoking command in '/root/workspace/build/drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/workspace/build/drone -- -j20 -l20
+[0.041s] [35m[1mScanning dependencies of target node[0m
+[0.060s] [ 50%] [32mBuilding CXX object CMakeFiles/node.dir/src/offb_node.cpp.o[0m
+[1.030s] In file included from [01m[K/root/workspace/src/drone/src/offb_node.cpp:9[m[K:
+[1.030s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::on_failure(const mqtt::token&)[m[K’:
+[1.030s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:89:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktok[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.030s]    89 |  void on_failure([01;35m[Kconst mqtt::token& tok[m[K) override {
+[1.030s]       |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.030s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::on_success(const mqtt::token&)[m[K’:
+[1.030s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktok[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.031s]    98 |  void on_success([01;35m[Kconst mqtt::token& tok[m[K) override {}
+[1.031s]       |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.031s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::connected(const string&)[m[K’:
+[1.031s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:101:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcause[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.031s]   101 |  void connected([01;35m[Kconst std::string& cause[m[K) override {
+[1.031s]       |                 [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.032s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::delivery_complete(mqtt::delivery_token_ptr)[m[K’:
+[1.032s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:131:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktoken[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.032s]   131 |  void delivery_complete([01;35m[Kmqtt::delivery_token_ptr token[m[K) override {}
+[1.032s]       |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.939s] [100%] [32m[1mLinking CXX executable node[0m
+[3.056s] [100%] Built target node
+[3.065s] Invoked command in '/root/workspace/build/drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/workspace/build/drone -- -j20 -l20
+[3.088s] Invoking command in '/root/workspace/build/drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /root/workspace/build/drone
+[3.093s] -- Install configuration: ""
+[3.093s] -- Installing: /root/workspace/install/drone/lib/drone/node
+[3.094s] -- Set runtime path of "/root/workspace/install/drone/lib/drone/node" to ""
+[3.094s] -- Up-to-date: /root/workspace/install/drone/share/ament_index/resource_index/package_run_dependencies/drone
+[3.094s] -- Up-to-date: /root/workspace/install/drone/share/ament_index/resource_index/parent_prefix_path/drone
+[3.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/environment/ament_prefix_path.sh
+[3.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/environment/ament_prefix_path.dsv
+[3.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/environment/path.sh
+[3.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/environment/path.dsv
+[3.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/local_setup.bash
+[3.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/local_setup.sh
+[3.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/local_setup.zsh
+[3.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/local_setup.dsv
+[3.095s] -- Installing: /root/workspace/install/drone/share/drone/package.dsv
+[3.095s] -- Up-to-date: /root/workspace/install/drone/share/ament_index/resource_index/packages/drone
+[3.095s] -- Up-to-date: /root/workspace/install/drone/share/drone/cmake/droneConfig.cmake
+[3.095s] -- Up-to-date: /root/workspace/install/drone/share/drone/cmake/droneConfig-version.cmake
+[3.095s] -- Up-to-date: /root/workspace/install/drone/share/drone/package.xml
+[3.097s] Invoked command in '/root/workspace/build/drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /root/workspace/build/drone

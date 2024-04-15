@@ -1,0 +1,103 @@
+[0.000000] (-) TimerEvent: {}
+[0.000207] (drone) JobQueued: {'identifier': 'drone', 'dependencies': OrderedDict()}
+[0.000605] (drone) JobStarted: {'identifier': 'drone'}
+[0.010724] (drone) JobProgress: {'identifier': 'drone', 'progress': 'cmake'}
+[0.011517] (drone) JobProgress: {'identifier': 'drone', 'progress': 'build'}
+[0.011758] (drone) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/workspace/build/drone', '--', '-j20', '-l20'], 'cwd': '/root/workspace/build/drone', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,48,0'), ('HOSTNAME', 'GTX-3060-2'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/root/microros_ws/install/px4_ros_com/lib:/root/microros_ws/install/px4_msgs/lib:/root/microros_ws/install/micro_ros_agent/lib:/root/microros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/workspace/install:/root/microros_ws/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/workspace/install/drone:/root/microros_ws/install/px4_ros_com:/root/microros_ws/install/px4_msgs:/root/microros_ws/install/micro_ros_setup:/root/microros_ws/install/micro_ros_agent:/root/microros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/root/workspace/build/drone'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/microros_ws/install/px4_ros_com/lib/python3.8/site-packages:/root/microros_ws/install/px4_msgs/lib/python3.8/site-packages:/root/microros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/root/workspace/install/drone:/root/microros_ws/install/px4_ros_com:/root/microros_ws/install/px4_msgs:/root/microros_ws/install/micro_ros_setup:/root/microros_ws/install/micro_ros_agent:/root/microros_ws/install/micro_ros_msgs:/opt/ros/foxy')]), 'shell': False}
+[0.038211] (drone) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target node\x1b[0m\n'}
+[0.057229] (drone) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/node.dir/src/offb_node.cpp.o\x1b[0m\n'}
+[0.099813] (-) TimerEvent: {}
+[0.200059] (-) TimerEvent: {}
+[0.300300] (-) TimerEvent: {}
+[0.400541] (-) TimerEvent: {}
+[0.500791] (-) TimerEvent: {}
+[0.601009] (-) TimerEvent: {}
+[0.701242] (-) TimerEvent: {}
+[0.801471] (-) TimerEvent: {}
+[0.901704] (-) TimerEvent: {}
+[1.001938] (-) TimerEvent: {}
+[1.063814] (drone) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:9\x1b[m\x1b[K:\n'}
+[1.064088] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void callback::on_failure(const mqtt::token&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.064129] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:89:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktok\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.064158] (drone) StderrLine: {'line': b'   89 |  void on_failure(\x1b[01;35m\x1b[Kconst mqtt::token& tok\x1b[m\x1b[K) override {\n'}
+[1.064184] (drone) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.064208] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void callback::on_success(const mqtt::token&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.064233] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:98:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktok\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.064258] (drone) StderrLine: {'line': b'   98 |  void on_success(\x1b[01;35m\x1b[Kconst mqtt::token& tok\x1b[m\x1b[K) override {}\n'}
+[1.064283] (drone) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.064516] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void callback::connected(const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.064545] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:101:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcause\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.064571] (drone) StderrLine: {'line': b'  101 |  void connected(\x1b[01;35m\x1b[Kconst std::string& cause\x1b[m\x1b[K) override {\n'}
+[1.064595] (drone) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[1.065566] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void callback::delivery_complete(mqtt::delivery_token_ptr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.065656] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:131:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktoken\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.065686] (drone) StderrLine: {'line': b'  131 |  void delivery_complete(\x1b[01;35m\x1b[Kmqtt::delivery_token_ptr token\x1b[m\x1b[K) override {}\n'}
+[1.065712] (drone) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[1.102023] (-) TimerEvent: {}
+[1.202250] (-) TimerEvent: {}
+[1.221914] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OffboardControl::odometry_cb(px4_msgs::msg::VehicleOdometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.222043] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:59:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.222088] (drone) StderrLine: {'line': b'   59 |     void odometry_cb(\x1b[01;35m\x1b[Kconst VehicleOdometry::SharedPtr msg\x1b[m\x1b[K){}\n'}
+[1.222117] (drone) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.302349] (-) TimerEvent: {}
+[1.402625] (-) TimerEvent: {}
+[1.502895] (-) TimerEvent: {}
+[1.603226] (-) TimerEvent: {}
+[1.703491] (-) TimerEvent: {}
+[1.803749] (-) TimerEvent: {}
+[1.904016] (-) TimerEvent: {}
+[2.004232] (-) TimerEvent: {}
+[2.104514] (-) TimerEvent: {}
+[2.204773] (-) TimerEvent: {}
+[2.305184] (-) TimerEvent: {}
+[2.405441] (-) TimerEvent: {}
+[2.505687] (-) TimerEvent: {}
+[2.605933] (-) TimerEvent: {}
+[2.706670] (-) TimerEvent: {}
+[2.806915] (-) TimerEvent: {}
+[2.907175] (-) TimerEvent: {}
+[3.007433] (-) TimerEvent: {}
+[3.107774] (-) TimerEvent: {}
+[3.208250] (-) TimerEvent: {}
+[3.308597] (-) TimerEvent: {}
+[3.408833] (-) TimerEvent: {}
+[3.509194] (-) TimerEvent: {}
+[3.609552] (-) TimerEvent: {}
+[3.709815] (-) TimerEvent: {}
+[3.810031] (-) TimerEvent: {}
+[3.910330] (-) TimerEvent: {}
+[4.010583] (-) TimerEvent: {}
+[4.110872] (-) TimerEvent: {}
+[4.211161] (-) TimerEvent: {}
+[4.311431] (-) TimerEvent: {}
+[4.411875] (-) TimerEvent: {}
+[4.512125] (-) TimerEvent: {}
+[4.612394] (-) TimerEvent: {}
+[4.647535] (drone) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable node\x1b[0m\n'}
+[4.712488] (-) TimerEvent: {}
+[4.811833] (drone) StdoutLine: {'line': b'[100%] Built target node\n'}
+[4.812538] (-) TimerEvent: {}
+[4.818523] (drone) CommandEnded: {'returncode': 0}
+[4.835214] (drone) JobProgress: {'identifier': 'drone', 'progress': 'install'}
+[4.842225] (drone) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/workspace/build/drone'], 'cwd': '/root/workspace/build/drone', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,48,0'), ('HOSTNAME', 'GTX-3060-2'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/root/microros_ws/install/px4_ros_com/lib:/root/microros_ws/install/px4_msgs/lib:/root/microros_ws/install/micro_ros_agent/lib:/root/microros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/workspace/install:/root/microros_ws/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/workspace/install/drone:/root/microros_ws/install/px4_ros_com:/root/microros_ws/install/px4_msgs:/root/microros_ws/install/micro_ros_setup:/root/microros_ws/install/micro_ros_agent:/root/microros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/root/workspace/build/drone'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/microros_ws/install/px4_ros_com/lib/python3.8/site-packages:/root/microros_ws/install/px4_msgs/lib/python3.8/site-packages:/root/microros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/root/workspace/install/drone:/root/microros_ws/install/px4_ros_com:/root/microros_ws/install/px4_msgs:/root/microros_ws/install/micro_ros_setup:/root/microros_ws/install/micro_ros_agent:/root/microros_ws/install/micro_ros_msgs:/opt/ros/foxy')]), 'shell': False}
+[4.849118] (drone) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.849250] (drone) StdoutLine: {'line': b'-- Installing: /root/workspace/install/drone/lib/drone/node\n'}
+[4.850808] (drone) StdoutLine: {'line': b'-- Set runtime path of "/root/workspace/install/drone/lib/drone/node" to ""\n'}
+[4.850931] (drone) StdoutLine: {'line': b'-- Up-to-date: /root/workspace/install/drone/share/ament_index/resource_index/package_run_dependencies/drone\n'}
+[4.850977] (drone) StdoutLine: {'line': b'-- Up-to-date: /root/workspace/install/drone/share/ament_index/resource_index/parent_prefix_path/drone\n'}
+[4.851021] (drone) StdoutLine: {'line': b'-- Up-to-date: /root/workspace/install/drone/share/drone/environment/ament_prefix_path.sh\n'}
+[4.851078] (drone) StdoutLine: {'line': b'-- Up-to-date: /root/workspace/install/drone/share/drone/environment/ament_prefix_path.dsv\n'}
+[4.851187] (drone) StdoutLine: {'line': b'-- Up-to-date: /root/workspace/install/drone/share/drone/environment/path.sh\n'}
+[4.851252] (drone) StdoutLine: {'line': b'-- Up-to-date: /root/workspace/install/drone/share/drone/environment/path.dsv\n'}
+[4.851291] (drone) StdoutLine: {'line': b'-- Up-to-date: /root/workspace/install/drone/share/drone/local_setup.bash\n'}
+[4.851330] (drone) StdoutLine: {'line': b'-- Up-to-date: /root/workspace/install/drone/share/drone/local_setup.sh\n'}
+[4.851381] (drone) StdoutLine: {'line': b'-- Up-to-date: /root/workspace/install/drone/share/drone/local_setup.zsh\n'}
+[4.851415] (drone) StdoutLine: {'line': b'-- Up-to-date: /root/workspace/install/drone/share/drone/local_setup.dsv\n'}
+[4.851450] (drone) StdoutLine: {'line': b'-- Installing: /root/workspace/install/drone/share/drone/package.dsv\n'}
+[4.851485] (drone) StdoutLine: {'line': b'-- Up-to-date: /root/workspace/install/drone/share/ament_index/resource_index/packages/drone\n'}
+[4.851520] (drone) StdoutLine: {'line': b'-- Up-to-date: /root/workspace/install/drone/share/drone/cmake/droneConfig.cmake\n'}
+[4.851554] (drone) StdoutLine: {'line': b'-- Up-to-date: /root/workspace/install/drone/share/drone/cmake/droneConfig-version.cmake\n'}
+[4.851589] (drone) StdoutLine: {'line': b'-- Up-to-date: /root/workspace/install/drone/share/drone/package.xml\n'}
+[4.852532] (drone) CommandEnded: {'returncode': 0}
+[4.886021] (drone) JobEnded: {'identifier': 'drone', 'rc': 0}
+[4.886504] (-) EventReactorShutdown: {}

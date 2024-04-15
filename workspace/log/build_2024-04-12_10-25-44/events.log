@@ -1,0 +1,87 @@
+[0.000000] (-) TimerEvent: {}
+[0.000134] (drone) JobQueued: {'identifier': 'drone', 'dependencies': OrderedDict()}
+[0.000390] (drone) JobStarted: {'identifier': 'drone'}
+[0.009753] (drone) JobProgress: {'identifier': 'drone', 'progress': 'cmake'}
+[0.010151] (drone) JobProgress: {'identifier': 'drone', 'progress': 'build'}
+[0.010609] (drone) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/workspace/build/drone', '--', '-j20', '-l20'], 'cwd': '/root/workspace/build/drone', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,48,0'), ('HOSTNAME', 'GTX-3060-2'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/root/microros_ws/install/px4_ros_com/lib:/root/microros_ws/install/px4_msgs/lib:/root/microros_ws/install/micro_ros_agent/lib:/root/microros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/workspace/install:/root/microros_ws/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/workspace/install/drone:/root/microros_ws/install/px4_ros_com:/root/microros_ws/install/px4_msgs:/root/microros_ws/install/micro_ros_setup:/root/microros_ws/install/micro_ros_agent:/root/microros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('PWD', '/root/workspace/build/drone'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/microros_ws/install/px4_ros_com/lib/python3.8/site-packages:/root/microros_ws/install/px4_msgs/lib/python3.8/site-packages:/root/microros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TMUX_PANE', '%3'), ('CMAKE_PREFIX_PATH', '/root/workspace/install/drone:/root/microros_ws/install/px4_ros_com:/root/microros_ws/install/px4_msgs:/root/microros_ws/install/micro_ros_setup:/root/microros_ws/install/micro_ros_agent:/root/microros_ws/install/micro_ros_msgs:/opt/ros/foxy')]), 'shell': False}
+[0.040625] (drone) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target node\x1b[0m\n'}
+[0.061695] (drone) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/node.dir/src/offb_node.cpp.o\x1b[0m\n'}
+[0.099860] (-) TimerEvent: {}
+[0.200133] (-) TimerEvent: {}
+[0.300430] (-) TimerEvent: {}
+[0.400721] (-) TimerEvent: {}
+[0.500999] (-) TimerEvent: {}
+[0.601253] (-) TimerEvent: {}
+[0.701564] (-) TimerEvent: {}
+[0.801809] (-) TimerEvent: {}
+[0.902044] (-) TimerEvent: {}
+[1.002251] (-) TimerEvent: {}
+[1.051506] (drone) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:11\x1b[m\x1b[K:\n'}
+[1.051667] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void callback::on_failure(const mqtt::token&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.051704] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:89:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktok\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.051732] (drone) StderrLine: {'line': b'   89 |  void on_failure(\x1b[01;35m\x1b[Kconst mqtt::token& tok\x1b[m\x1b[K) override {\n'}
+[1.051757] (drone) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.051782] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void callback::on_success(const mqtt::token&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.051807] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:98:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktok\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.051832] (drone) StderrLine: {'line': b'   98 |  void on_success(\x1b[01;35m\x1b[Kconst mqtt::token& tok\x1b[m\x1b[K) override {}\n'}
+[1.051856] (drone) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.051934] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void callback::connected(const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.051962] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:101:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcause\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.051987] (drone) StderrLine: {'line': b'  101 |  void connected(\x1b[01;35m\x1b[Kconst std::string& cause\x1b[m\x1b[K) override {\n'}
+[1.052011] (drone) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[1.053122] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void callback::delivery_complete(mqtt::delivery_token_ptr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.053251] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/mqtt.cpp:131:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktoken\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.053304] (drone) StderrLine: {'line': b'  131 |  void delivery_complete(\x1b[01;35m\x1b[Kmqtt::delivery_token_ptr token\x1b[m\x1b[K) override {}\n'}
+[1.053343] (drone) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[1.071930] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KOffboardControl::OffboardControl()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.072164] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:25:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.072205] (drone) StderrLine: {'line': b'   25 |   \x1b[01;31m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K = 0;\n'}
+[1.072237] (drone) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.072277] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[1.072307] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:29:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K\xe2\x80\x99 is not captured\n'}
+[1.072337] (drone) StderrLine: {'line': b'   29 |    if (\x1b[01;31m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K == 10)\n'}
+[1.072366] (drone) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.072396] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:27:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthe lambda has no capture-default\n'}
+[1.072426] (drone) StderrLine: {'line': b'   27 |   auto timer_callback = [this\x1b[01;36m\x1b[K]\x1b[m\x1b[K() -> void {\n'}
+[1.072455] (drone) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.072485] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:25:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<typeprefixerror>offboard_setpoint_counter_\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.072516] (drone) StderrLine: {'line': b'   25 |   \x1b[01;36m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K = 0;\n'}
+[1.072545] (drone) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.072573] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:38:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K\xe2\x80\x99 is not captured\n'}
+[1.072602] (drone) StderrLine: {'line': b'   38 |    if (\x1b[01;31m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K < 10){offboard_setpoint_counter_++;}\n'}
+[1.072635] (drone) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.072663] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:27:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthe lambda has no capture-default\n'}
+[1.072692] (drone) StderrLine: {'line': b'   27 |   auto timer_callback = [this\x1b[01;36m\x1b[K]\x1b[m\x1b[K() -> void {\n'}
+[1.072720] (drone) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.072748] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:25:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<typeprefixerror>offboard_setpoint_counter_\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.072776] (drone) StderrLine: {'line': b'   25 |   \x1b[01;36m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K = 0;\n'}
+[1.072808] (drone) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.072836] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:38:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K\xe2\x80\x99 is not captured\n'}
+[1.072868] (drone) StderrLine: {'line': b'   38 |    if (offboard_setpoint_counter_ < 10){\x1b[01;31m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K++;}\n'}
+[1.072896] (drone) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.072925] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:27:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthe lambda has no capture-default\n'}
+[1.072954] (drone) StderrLine: {'line': b'   27 |   auto timer_callback = [this\x1b[01;36m\x1b[K]\x1b[m\x1b[K() -> void {\n'}
+[1.072982] (drone) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.073010] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:25:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<typeprefixerror>offboard_setpoint_counter_\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.073041] (drone) StderrLine: {'line': b'   25 |   \x1b[01;36m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K = 0;\n'}
+[1.073069] (drone) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.073096] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KOffboardControl::OffboardControl()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.073125] (drone) StderrLine: {'line': b'\x1b[01m\x1b[K/root/workspace/src/drone/src/offb_node.cpp:42:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""ms\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.073153] (drone) StderrLine: {'line': b'   42 |   timer = this -> create_wall_timer(\x1b[01;31m\x1b[K100ms\x1b[m\x1b[K, timer_callback);\n'}
+[1.073181] (drone) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.102344] (-) TimerEvent: {}
+[1.202600] (-) TimerEvent: {}
+[1.302882] (-) TimerEvent: {}
+[1.403195] (-) TimerEvent: {}
+[1.503516] (-) TimerEvent: {}
+[1.603883] (-) TimerEvent: {}
+[1.704128] (-) TimerEvent: {}
+[1.804371] (-) TimerEvent: {}
+[1.904622] (-) TimerEvent: {}
+[2.004878] (-) TimerEvent: {}
+[2.059396] (drone) StderrLine: {'line': b'make[2]: *** [CMakeFiles/node.dir/build.make:63: CMakeFiles/node.dir/src/offb_node.cpp.o] Error 1\n'}
+[2.059602] (drone) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/node.dir/all] Error 2\n'}
+[2.059673] (drone) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[2.061270] (drone) CommandEnded: {'returncode': 2}
+[2.089438] (drone) JobEnded: {'identifier': 'drone', 'rc': 2}
+[2.099835] (-) EventReactorShutdown: {}

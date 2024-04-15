@@ -1,0 +1,22 @@
+[0.010s] Invoking command in '/root/workspace/build/drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/workspace/build/drone -- -j20 -l20
+[0.053s] [100%] Built target node
+[0.060s] Invoked command in '/root/workspace/build/drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/workspace/build/drone -- -j20 -l20
+[0.085s] Invoking command in '/root/workspace/build/drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /root/workspace/build/drone
+[0.094s] -- Install configuration: ""
+[0.094s] -- Up-to-date: /root/workspace/install/drone/lib/drone/node
+[0.094s] -- Up-to-date: /root/workspace/install/drone/share/ament_index/resource_index/package_run_dependencies/drone
+[0.094s] -- Up-to-date: /root/workspace/install/drone/share/ament_index/resource_index/parent_prefix_path/drone
+[0.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/environment/ament_prefix_path.sh
+[0.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/environment/ament_prefix_path.dsv
+[0.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/environment/path.sh
+[0.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/environment/path.dsv
+[0.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/local_setup.bash
+[0.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/local_setup.sh
+[0.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/local_setup.zsh
+[0.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/local_setup.dsv
+[0.094s] -- Installing: /root/workspace/install/drone/share/drone/package.dsv
+[0.094s] -- Up-to-date: /root/workspace/install/drone/share/ament_index/resource_index/packages/drone
+[0.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/cmake/droneConfig.cmake
+[0.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/cmake/droneConfig-version.cmake
+[0.094s] -- Up-to-date: /root/workspace/install/drone/share/drone/package.xml
+[0.096s] Invoked command in '/root/workspace/build/drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /root/workspace/build/drone

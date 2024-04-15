@@ -307,10 +307,16 @@ CMakeFiles/node.dir/src/offb_node.cpp.o: /root/microros_ws/install/px4_msgs/incl
 CMakeFiles/node.dir/src/offb_node.cpp.o: /root/microros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__struct.hpp
 CMakeFiles/node.dir/src/offb_node.cpp.o: /root/microros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__traits.hpp
 CMakeFiles/node.dir/src/offb_node.cpp.o: /root/microros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__type_support.hpp
+CMakeFiles/node.dir/src/offb_node.cpp.o: /root/microros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_odometry__builder.hpp
+CMakeFiles/node.dir/src/offb_node.cpp.o: /root/microros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_odometry__struct.hpp
+CMakeFiles/node.dir/src/offb_node.cpp.o: /root/microros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_odometry__traits.hpp
+CMakeFiles/node.dir/src/offb_node.cpp.o: /root/microros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_odometry__type_support.hpp
 CMakeFiles/node.dir/src/offb_node.cpp.o: /root/microros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp
 CMakeFiles/node.dir/src/offb_node.cpp.o: /root/microros_ws/install/px4_msgs/include/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 CMakeFiles/node.dir/src/offb_node.cpp.o: /root/microros_ws/install/px4_msgs/include/px4_msgs/msg/trajectory_setpoint.hpp
 CMakeFiles/node.dir/src/offb_node.cpp.o: /root/microros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_command.hpp
+CMakeFiles/node.dir/src/offb_node.cpp.o: /root/microros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_odometry.hpp
 CMakeFiles/node.dir/src/offb_node.cpp.o: /root/workspace/src/drone/src/mqtt.cpp
 CMakeFiles/node.dir/src/offb_node.cpp.o: /root/workspace/src/drone/src/offb_node.cpp
+CMakeFiles/node.dir/src/offb_node.cpp.o: /root/workspace/src/drone/src/pid.cpp
 
