@@ -174,7 +174,7 @@ int main(int argc, char **argv) {
 
     rclcpp::init(argc,argv);
 
-    client = new mqtt::async_client("127.0.0.1:1883", "ROS-consumer", 0);
+    client = new mqtt::async_client("127.0.0.1:1883", "ROS2-consumer", 0);
     mqtt::connect_options connOpts;
     connOpts.set_clean_session(false);
     callback mqtt_cb(*client, connOpts);
