@@ -1,2 +1,0 @@
-Invoking command in '/root/workspace/build/drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /root/workspace/src/drone -DCMAKE_INSTALL_PREFIX=/root/workspace/install/drone
-Invoked command in '/root/workspace/build/drone' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /root/workspace/src/drone -DCMAKE_INSTALL_PREFIX=/root/workspace/install/drone

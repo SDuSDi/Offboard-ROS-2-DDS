@@ -1,0 +1,185 @@
+In file included from [01m[K/root/workspace/src/drone/src/offb_node.cpp:15[m[K:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::on_failure(const mqtt::token&)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:89:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktok[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   89 |  void on_failure([01;35m[Kconst mqtt::token& tok[m[K) override {
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::on_success(const mqtt::token&)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktok[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   98 |  void on_success([01;35m[Kconst mqtt::token& tok[m[K) override {}
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::connected(const string&)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:101:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcause[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  101 |  void connected([01;35m[Kconst std::string& cause[m[K) override {
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::delivery_complete(mqtt::delivery_token_ptr)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:131:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktoken[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  131 |  void delivery_complete([01;35m[Kmqtt::delivery_token_ptr token[m[K) override {}
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/root/workspace/src/drone/src/offb_node.cpp:2[m[K:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:189:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  189 |     RCLCPP_INFO([01;31m[Kthis[m[K -> get_logger(), "MQTT client ready for consumption");
+      |                 [01;31m[K^~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:189:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:189:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  189 |     [01;31m[KRCLCPP_INFO[m[K(this -> get_logger(), "MQTT client ready for consumption");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:189:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  189 |     [01;31m[KRCLCPP_INFO[m[K(this -> get_logger(), "MQTT client ready for consumption");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:189:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  189 |     [01;31m[KRCLCPP_INFO[m[K(this -> get_logger(), "MQTT client ready for consumption");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/root/workspace/src/drone/src/offb_node.cpp:2[m[K:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:189:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  189 |     RCLCPP_INFO([01;31m[Kthis[m[K -> get_logger(), "MQTT client ready for consumption");
+      |                 [01;31m[K^~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:189:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  189 |     RCLCPP_INFO([01;31m[Kthis[m[K -> get_logger(), "MQTT client ready for consumption");
+      |                 [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/root/workspace/src/drone/src/offb_node.cpp:2[m[K:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:191:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  191 |     RCLCPP_INFO([01;31m[Kthis[m[K -> get_logger(), "Connecting to MQTT broker...");
+      |                 [01;31m[K^~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:191:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:191:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  191 |     [01;31m[KRCLCPP_INFO[m[K(this -> get_logger(), "Connecting to MQTT broker...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:191:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  191 |     [01;31m[KRCLCPP_INFO[m[K(this -> get_logger(), "Connecting to MQTT broker...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:191:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  191 |     [01;31m[KRCLCPP_INFO[m[K(this -> get_logger(), "Connecting to MQTT broker...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/root/workspace/src/drone/src/offb_node.cpp:2[m[K:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:191:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  191 |     RCLCPP_INFO([01;31m[Kthis[m[K -> get_logger(), "Connecting to MQTT broker...");
+      |                 [01;31m[K^~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:191:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  191 |     RCLCPP_INFO([01;31m[Kthis[m[K -> get_logger(), "Connecting to MQTT broker...");
+      |                 [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/root/workspace/src/drone/src/offb_node.cpp:2[m[K:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:193:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  193 |     RCLCPP_INFO([01;31m[Kthis[m[K -> get_logger(), "Connected to MQTT broker");
+      |                 [01;31m[K^~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:193:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:193:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  193 |     [01;31m[KRCLCPP_INFO[m[K(this -> get_logger(), "Connected to MQTT broker");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:193:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  193 |     [01;31m[KRCLCPP_INFO[m[K(this -> get_logger(), "Connected to MQTT broker");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:193:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  193 |     [01;31m[KRCLCPP_INFO[m[K(this -> get_logger(), "Connected to MQTT broker");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/root/workspace/src/drone/src/offb_node.cpp:2[m[K:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:193:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  193 |     RCLCPP_INFO([01;31m[Kthis[m[K -> get_logger(), "Connected to MQTT broker");
+      |                 [01;31m[K^~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:193:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  193 |     RCLCPP_INFO([01;31m[Kthis[m[K -> get_logger(), "Connected to MQTT broker");
+      |                 [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/root/workspace/src/drone/src/offb_node.cpp:2[m[K:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:196:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  196 |         RCLCPP_INFO([01;31m[Kthis[m[K -> get_logger(), "Failed to connect to MQTT broker. Retrying...");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:196:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:196:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  196 |         [01;31m[KRCLCPP_INFO[m[K(this -> get_logger(), "Failed to connect to MQTT broker. Retrying...");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:196:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  196 |         [01;31m[KRCLCPP_INFO[m[K(this -> get_logger(), "Failed to connect to MQTT broker. Retrying...");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:196:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  196 |         [01;31m[KRCLCPP_INFO[m[K(this -> get_logger(), "Failed to connect to MQTT broker. Retrying...");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/root/workspace/src/drone/src/offb_node.cpp:2[m[K:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:196:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  196 |         RCLCPP_INFO([01;31m[Kthis[m[K -> get_logger(), "Failed to connect to MQTT broker. Retrying...");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:196:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  196 |         RCLCPP_INFO([01;31m[Kthis[m[K -> get_logger(), "Failed to connect to MQTT broker. Retrying...");
+      |                     [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/node.dir/build.make:63: CMakeFiles/node.dir/src/offb_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

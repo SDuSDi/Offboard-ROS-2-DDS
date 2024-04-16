@@ -4327,7 +4327,9 @@ px4_msgs/msg/vehicle_command.hpp
 /root/workspace/src/drone/src/px4_msgs/msg/vehicle_command.hpp
 px4_msgs/msg/vehicle_odometry.hpp
 /root/workspace/src/drone/src/px4_msgs/msg/vehicle_odometry.hpp
-iostream
+mqtt/async_client.h
+/root/workspace/src/drone/src/mqtt/async_client.h
+nlohmann/json.hpp
 -
 mqtt.cpp
 /root/workspace/src/drone/src/mqtt.cpp
@@ -4335,6 +4337,4 @@ pid.cpp
 /root/workspace/src/drone/src/pid.cpp
 
 /root/workspace/src/drone/src/pid.cpp
-iostream
--
 

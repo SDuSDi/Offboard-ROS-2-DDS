@@ -27,7 +27,8 @@ file(GLOB SOURCES src/mqtt.cpp)
 file(GLOB SOURCES src/pid.cpp)
 
 add_executable(node src/offb_node.cpp) 
-ament_target_dependencies(node rclcpp px4_msgs nlohmann_json PahoMqttCpp) #paho-mqtt3a paho-mqttpp3
+target_link_libraries(node paho-mqtt3a paho-mqttpp3)
+ament_target_dependencies(node rclcpp px4_msgs nlohmann_json) #paho-mqtt3a paho-mqttpp3
 
 install(TARGETS
   node

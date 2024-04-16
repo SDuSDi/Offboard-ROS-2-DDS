@@ -1,0 +1,95 @@
+[0.008s] Invoking command in '/root/workspace/build/drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /root/workspace/src/drone -DCMAKE_INSTALL_PREFIX=/root/workspace/install/drone
+[0.069s] -- The C compiler identification is GNU 9.4.0
+[0.107s] -- The CXX compiler identification is GNU 9.4.0
+[0.111s] -- Check for working C compiler: /usr/bin/cc
+[0.157s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.157s] -- Detecting C compiler ABI info
+[0.204s] -- Detecting C compiler ABI info - done
+[0.211s] -- Detecting C compile features
+[0.211s] -- Detecting C compile features - done
+[0.213s] -- Check for working CXX compiler: /usr/bin/c++
+[0.264s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.264s] -- Detecting CXX compiler ABI info
+[0.326s] -- Detecting CXX compiler ABI info - done
+[0.333s] -- Detecting CXX compile features
+[0.333s] -- Detecting CXX compile features - done
+[0.335s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.352s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.352s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.461s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.491s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.496s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.555s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.574s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.628s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.661s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.662s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.663s] -- Looking for pthread.h
+[0.709s] -- Looking for pthread.h - found
+[0.709s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.756s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.757s] -- Looking for pthread_create in pthreads
+[0.807s] -- Looking for pthread_create in pthreads - not found
+[0.807s] -- Looking for pthread_create in pthread
+[0.854s] -- Looking for pthread_create in pthread - found
+[0.855s] -- Found Threads: TRUE  
+[0.957s] -- Found px4_msgs: 2.0.1 (/root/microros_ws/install/px4_msgs/share/px4_msgs/cmake)
+[0.975s] -- Found nlohmann_json: /usr/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.7.3") 
+[0.977s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.023s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.023s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.024s] -- Configured cppcheck include dirs: 
+[1.024s] -- Configured cppcheck exclude dirs and/or files: 
+[1.024s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.024s] -- Configured cpplint exclude dirs and/or files: 
+[1.024s] -- Added test 'lint_cmake' to check CMake code style
+[1.025s] -- Added test 'uncrustify' to check C / C++ code style
+[1.025s] -- Configured uncrustify additional arguments: 
+[1.025s] -- Added test 'xmllint' to check XML markup files
+[1.027s] -- Configuring done
+[1.032s] -- Generating done
+[1.033s] -- Build files have been written to: /root/workspace/build/drone
+[1.039s] Invoked command in '/root/workspace/build/drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /root/workspace/src/drone -DCMAKE_INSTALL_PREFIX=/root/workspace/install/drone
+[1.040s] Invoking command in '/root/workspace/build/drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/workspace/build/drone -- -j20 -l20
+[1.069s] [35m[1mScanning dependencies of target node[0m
+[1.099s] [ 50%] [32mBuilding CXX object CMakeFiles/node.dir/src/offb_node.cpp.o[0m
+[2.165s] In file included from [01m[K/root/workspace/src/drone/src/offb_node.cpp:15[m[K:
+[2.165s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::on_failure(const mqtt::token&)[m[K’:
+[2.165s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:89:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktok[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.165s]    89 |  void on_failure([01;35m[Kconst mqtt::token& tok[m[K) override {
+[2.165s]       |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.165s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::on_success(const mqtt::token&)[m[K’:
+[2.165s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktok[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.166s]    98 |  void on_success([01;35m[Kconst mqtt::token& tok[m[K) override {}
+[2.166s]       |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.166s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::connected(const string&)[m[K’:
+[2.166s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:101:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcause[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.166s]   101 |  void connected([01;35m[Kconst std::string& cause[m[K) override {
+[2.166s]       |                 [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.167s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::delivery_complete(mqtt::delivery_token_ptr)[m[K’:
+[2.167s] [01m[K/root/workspace/src/drone/src/mqtt.cpp:131:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktoken[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.167s]   131 |  void delivery_complete([01;35m[Kmqtt::delivery_token_ptr token[m[K) override {}
+[2.167s]       |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[6.318s] [100%] [32m[1mLinking CXX executable node[0m
+[6.551s] [100%] Built target node
+[6.560s] Invoked command in '/root/workspace/build/drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/workspace/build/drone -- -j20 -l20
+[6.580s] Invoking command in '/root/workspace/build/drone': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /root/workspace/build/drone
+[6.584s] -- Install configuration: ""
+[6.584s] -- Installing: /root/workspace/install/drone/lib/drone/node
+[6.586s] -- Set runtime path of "/root/workspace/install/drone/lib/drone/node" to ""
+[6.587s] -- Installing: /root/workspace/install/drone/share/ament_index/resource_index/package_run_dependencies/drone
+[6.587s] -- Installing: /root/workspace/install/drone/share/ament_index/resource_index/parent_prefix_path/drone
+[6.587s] -- Installing: /root/workspace/install/drone/share/drone/environment/ament_prefix_path.sh
+[6.587s] -- Installing: /root/workspace/install/drone/share/drone/environment/ament_prefix_path.dsv
+[6.587s] -- Installing: /root/workspace/install/drone/share/drone/environment/path.sh
+[6.587s] -- Installing: /root/workspace/install/drone/share/drone/environment/path.dsv
+[6.587s] -- Installing: /root/workspace/install/drone/share/drone/local_setup.bash
+[6.587s] -- Installing: /root/workspace/install/drone/share/drone/local_setup.sh
+[6.587s] -- Installing: /root/workspace/install/drone/share/drone/local_setup.zsh
+[6.587s] -- Installing: /root/workspace/install/drone/share/drone/local_setup.dsv
+[6.587s] -- Installing: /root/workspace/install/drone/share/drone/package.dsv
+[6.588s] -- Installing: /root/workspace/install/drone/share/ament_index/resource_index/packages/drone
+[6.588s] -- Installing: /root/workspace/install/drone/share/drone/cmake/droneConfig.cmake
+[6.588s] -- Installing: /root/workspace/install/drone/share/drone/cmake/droneConfig-version.cmake
+[6.588s] -- Installing: /root/workspace/install/drone/share/drone/package.xml
+[6.589s] Invoked command in '/root/workspace/build/drone' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /root/workspace/build/drone

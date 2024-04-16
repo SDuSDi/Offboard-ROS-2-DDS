@@ -1,14 +1,7 @@
-#include <iostream>
-
 class PID
 {
 public:
-    PID(float Kp, float Ki, float Kd, float dt){
-        Kp = Kp;
-        Ki = Ki;
-        Kd = Kd;
-        dt = dt;
-    }
+    PID(float Kp_, float Ki_, float Kd_, float dt_) : Kp(Kp_), Ki(Ki_), Kd(Kd_), dt(dt_) {}
     float calculate(float setpoint, float pv){
         
         float error = setpoint - pv;
@@ -24,14 +17,14 @@ public:
 
         pre_error = error;
 
-        float res = (Pout + Iout + Dout);
-        return res;
+        float output = (Pout + Iout + Dout);
+        return output;
     }
 private:
     float Kp;
     float Ki;
     float Kd;
-    float dt;
+    double dt;
     float pre_error = 0;
     float integral = 0;
 };

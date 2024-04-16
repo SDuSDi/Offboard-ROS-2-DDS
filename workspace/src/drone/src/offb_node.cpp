@@ -5,7 +5,11 @@
 #include "px4_msgs/msg/vehicle_command.hpp"
 #include "px4_msgs/msg/vehicle_odometry.hpp"
 
-#include <iostream>
+// MQTT library
+#include "mqtt/async_client.h"
+// JSON library
+#include <nlohmann/json.hpp>
+using json = nlohmann::json; // for convenience
 
 // Callback files
 #include "mqtt.cpp"
@@ -15,16 +19,16 @@ using namespace std::chrono_literals;
 using namespace px4_msgs::msg;
 
 std::array<float,3> drone_pos = {0.0,0.0,0.0};
-std::array<float,3> expected_pos = {0.01,0.01,2.0};
+std::array<float,3> expected_pos = {0.0,0.0,2.0};
 
-PID pidx(1.0,1.0,1.0,0.1);
-PID pidy(1.0,1.0,1.0,0.1);
-PID pidz(10.0,1.0,0.05,0.1);
+PID pidx(3.0,0.6,1.5,0.1);
+PID pidy(3.0,0.6,1.5,0.1);
+PID pidz(2.0,0.2,1.0,0.1);
+mqtt::async_client *client = NULL;
 
 class OffboardControl : public rclcpp::Node
 {
 public:
-
     OffboardControl() : Node("offb_node")
     {
         offboard_controller = this -> create_publisher<OffboardControlMode>("/fmu/in/offboard_control_mode",10);
@@ -37,16 +41,16 @@ public:
         vehicle_odometry = this -> create_subscription<VehicleOdometry>("/fmu/out/vehicle_odometry", qos,
         [this] (const VehicleOdometry::SharedPtr msg) {
             drone_pos = msg -> position;
-            // RCLCPP_INFO(this -> get_logger(), "Drone position: %f, %f, %f", drone_pos[0], drone_pos[1], drone_pos[2]);
         });
+        RCLCPP_INFO(this -> get_logger(), "Offboard control node started");
 
         set_pos = false;
 		offboard_setpoint_counter_ = 0;
 
         if(set_pos){
-            RCLCPP_INFO(this -> get_logger(), "Offboard control by position");
+            RCLCPP_INFO(this -> get_logger(), "Offboard controlled by position");
         }else{
-            RCLCPP_INFO(this -> get_logger(), "Offboard control by velocity");
+            RCLCPP_INFO(this -> get_logger(), "Offboard controlled by velocity");
         }
 
 		auto timer_callback = [this]() -> void {
@@ -58,24 +62,35 @@ public:
 			}
             this -> publish_offboard_mode(set_pos, !set_pos);
 
+            ////////////////////////
+            if(data["objects"][0]["detection"]["bounding_box"]["y_max"]>0.9){
+                expected_pos[0] += 0.05; 
+
+            }else{if(data["objects"][0]["detection"]["bounding_box"]["y_min"]<0.1){
+                expected_pos[0] += -0.05;  
+                }
+            }
+
+            if(data["objects"][0]["detection"]["bounding_box"]["x_max"]>0.9){
+                expected_pos[1] += 0.04;   
+
+            }else{if(data["objects"][0]["detection"]["bounding_box"]["x_min"]<0.1){  
+                expected_pos[1] += -0.04;  
+                }
+            }
+            ////////////////////////
+
             if(set_pos){
                 this -> publish_trajectory(0, 0, 2, set_pos);
             }else{
-                //std::cout<<pidx.calculate(expected_pos[0], drone_pos[0] + 1.0)<<std::endl;
                 this -> publish_trajectory(
                     pidx.calculate(expected_pos[0], drone_pos[0] + 1.0),
                     pidy.calculate(expected_pos[1], drone_pos[1] + 1.0),
                     pidz.calculate(-expected_pos[2], drone_pos[2]),
                     set_pos
                 );
-                // this -> publish_trajectory(
-                //     1 * (expected_pos[0] - (drone_pos[0] + 1.0)),
-                //     1 * (expected_pos[1] - (drone_pos[1] + 1.0)),
-                //     1 * (- expected_pos[2] - drone_pos[2]),
-                //     set_pos
-                // );
             }
-			if (offboard_setpoint_counter_ < 11){offboard_setpoint_counter_++;}
+			if (offboard_setpoint_counter_ < 101){offboard_setpoint_counter_++;}
 		};
 		timer = this -> create_wall_timer(100ms, timer_callback);
     }
@@ -127,7 +142,7 @@ void OffboardControl::publish_trajectory(float x, float y, float z, bool check){
     {
         TrajectorySetpoint msg{};
         msg.position = {x, y, z};
-        msg.yaw = 0; // -3.14; // [-PI:PI]
+        msg.yaw = 0; // [-PI:PI]
         msg.timestamp = this -> get_clock() -> now().nanoseconds() / 1000;
         this -> trajectory_publisher -> publish(msg);
     }
@@ -135,7 +150,7 @@ void OffboardControl::publish_trajectory(float x, float y, float z, bool check){
     {
         TrajectorySetpoint msg{};
         msg.velocity = {x, y, z};
-        msg.yaw = 0; // -3.14; // [-PI:PI]
+        msg.yaw = 0; // [-PI:PI]
         msg.timestamp = this -> get_clock() -> now().nanoseconds() / 1000;
         this -> trajectory_publisher -> publish(msg);
     }
@@ -155,14 +170,18 @@ void OffboardControl::publish_vehicle_command(uint16_t command, float param1, fl
 	this -> vehicle_commander -> publish(msg);  
 }
 
-// void OffboardControl::odometry_cb(const VehicleOdometry::SharedPtr msg){
-//     drone_pos = msg -> position;
-//     RCLCPP_INFO(this -> get_logger(), "Drone position: %f, %f, %f", drone_pos[0], drone_pos[1], drone_pos[2]);
-// }
-
 int main(int argc, char **argv) {
 
     rclcpp::init(argc,argv);
+
+    client = new mqtt::async_client("127.0.0.1:1883", "ROS-consumer", 0);
+    mqtt::connect_options connOpts;
+    connOpts.set_clean_session(false);
+    callback mqtt_cb(*client, connOpts);
+    client->set_callback(mqtt_cb);
+    client->start_consuming();
+    client->connect(connOpts);
+
     rclcpp::spin(std::make_shared<OffboardControl>());
 
     rclcpp::shutdown();
