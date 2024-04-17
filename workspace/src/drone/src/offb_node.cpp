@@ -60,37 +60,43 @@ public:
 				this -> publish_vehicle_command(VehicleCommand::VEHICLE_CMD_DO_SET_MODE,1,6);
 				this -> arm();
 			}
-            this -> publish_offboard_mode(set_pos, !set_pos);
-
-            ////////////////////////
-            if(data["objects"][0]["detection"]["bounding_box"]["y_max"]>0.9){
-                expected_pos[0] += 0.05; 
-
-            }else{if(data["objects"][0]["detection"]["bounding_box"]["y_min"]<0.1){
-                expected_pos[0] += -0.05;  
-                }
-            }
-
-            if(data["objects"][0]["detection"]["bounding_box"]["x_max"]>0.9){
-                expected_pos[1] += 0.04;   
-
-            }else{if(data["objects"][0]["detection"]["bounding_box"]["x_min"]<0.1){  
-                expected_pos[1] += -0.04;  
-                }
-            }
-            ////////////////////////
-
-            if(set_pos){
-                this -> publish_trajectory(0, 0, 2, set_pos);
+            if(drone_pos[2]>-1.0)
+            {
+                RCLCPP_INFO(this -> get_logger(), "Takeoff");
+                this -> publish_offboard_mode(true, false);
+                this -> publish_trajectory(drone_pos[0], drone_pos[1], -2.0, true);
             }else{
-                this -> publish_trajectory(
-                    pidx.calculate(expected_pos[0], drone_pos[0] + 1.0),
-                    pidy.calculate(expected_pos[1], drone_pos[1] + 1.0),
-                    pidz.calculate(-expected_pos[2], drone_pos[2]),
-                    set_pos
-                );
+                RCLCPP_INFO(this -> get_logger(), "Flight");
+                this -> publish_offboard_mode(set_pos, !set_pos);
+                ////////////////////////
+                if(data["objects"][0]["detection"]["bounding_box"]["y_max"]>0.9){
+                    expected_pos[0] += 0.05; 
+
+                }else{if(data["objects"][0]["detection"]["bounding_box"]["y_min"]<0.1){
+                    expected_pos[0] += -0.05;  
+                    }
+                }
+
+                if(data["objects"][0]["detection"]["bounding_box"]["x_max"]>0.9){
+                    expected_pos[1] += 0.04;   
+
+                }else{if(data["objects"][0]["detection"]["bounding_box"]["x_min"]<0.1){  
+                    expected_pos[1] += -0.04;  
+                    }
+                }
+                ////////////////////////
+                if(set_pos){
+                    this -> publish_trajectory(0, 0, 2, set_pos);
+                }else{
+                    this -> publish_trajectory(
+                        pidx.calculate(expected_pos[0], drone_pos[0] + 1.0),
+                        pidy.calculate(expected_pos[1], drone_pos[1] + 1.0),
+                        pidz.calculate(-expected_pos[2], drone_pos[2]),
+                        set_pos
+                    );
+                }
             }
-			if (offboard_setpoint_counter_ < 101){offboard_setpoint_counter_++;}
+			if (offboard_setpoint_counter_ < 11){offboard_setpoint_counter_++;}
 		};
 		timer = this -> create_wall_timer(100ms, timer_callback);
     }
