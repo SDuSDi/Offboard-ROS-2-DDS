@@ -43,6 +43,7 @@ source install/setup.bash
 # Be sure to wait until both Gazebo and QGroundControl are up and running smoothly
 ros2 run drone node
 ```
+If everything is alright, you should see the drone takeoff and redirect itself to (0,0) from where it is. If you move your head so that it gets near an edge of the camera, the drone will move accordingly.
 
 ## Diving Deeper
 
