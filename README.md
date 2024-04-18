@@ -3,7 +3,7 @@
 <!--Nah, I'd push-->
 This project contains the code for offboard control with ROS 2 made during my curricular end-of-studies internship at CATEC using DDS to communicate with PX4's autopilot.
 
-<!--![image](assets/iris_pocho.png)-->
+![image](assets/iris_pocho.png)
 ![image](assets/schema.png)
 
 ## Dependencies and prerequisites
@@ -14,7 +14,6 @@ After you are done installing docker, you'll need to clone the DLStreamer Applic
 
 ## Usage
 
-<!--TODO: Arreglar la primer parte-->
 To use, the first step is to clone the repository. You may do this with the following command.
 ```
 git clone https://github.com/SDuSDi/Offboard-ROS-2-DDS.git
