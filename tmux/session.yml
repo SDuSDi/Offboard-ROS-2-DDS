@@ -17,7 +17,7 @@ windows:
   - control:
       layout: tiled
       panes:
-        - 
-        - 
-        -
+        - cd workspace && colcon build && source install/setup.bash && clear
+        - sleep 10; ros2 topic echo /fmu/out/vehicle_command_ack
+        - sleep 10; ros2 topic echo /fmu/in/vehicle_command
         - 

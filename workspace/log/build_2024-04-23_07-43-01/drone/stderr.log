@@ -1,0 +1,24 @@
+In file included from [01m[K/root/workspace/src/drone/src/offb_node.cpp:15[m[K:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::on_failure(const mqtt::token&)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:89:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktok[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   89 |  void on_failure([01;35m[Kconst mqtt::token& tok[m[K) override {
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::on_success(const mqtt::token&)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktok[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   98 |  void on_success([01;35m[Kconst mqtt::token& tok[m[K) override {}
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::connected(const string&)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:101:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcause[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  101 |  void connected([01;35m[Kconst std::string& cause[m[K) override {
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::delivery_complete(mqtt::delivery_token_ptr)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:131:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktoken[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  131 |  void delivery_complete([01;35m[Kmqtt::delivery_token_ptr token[m[K) override {}
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_takeoff()[m[K’:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:175:16:[m[K [01;31m[Kerror: [m[K‘[01m[KVehileCommand[m[K’ has not been declared
+  175 |  msg.command = [01;31m[KVehileCommand[m[K::VEHICLE_CMD_NAV_TAKEOFF;
+      |                [01;31m[K^~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/node.dir/build.make:63: CMakeFiles/node.dir/src/offb_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

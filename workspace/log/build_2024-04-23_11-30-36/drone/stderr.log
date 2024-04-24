@@ -1,0 +1,66 @@
+In file included from [01m[K/root/workspace/src/drone/src/offb_node.cpp:13[m[K:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::on_failure(const mqtt::token&)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:89:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktok[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   89 |  void on_failure([01;35m[Kconst mqtt::token& tok[m[K) override {
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::on_success(const mqtt::token&)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktok[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   98 |  void on_success([01;35m[Kconst mqtt::token& tok[m[K) override {}
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::connected(const string&)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:101:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcause[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  101 |  void connected([01;35m[Kconst std::string& cause[m[K) override {
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:[m[K In member function ‘[01m[Kvirtual void callback::delivery_complete(mqtt::delivery_token_ptr)[m[K’:
+[01m[K/root/workspace/src/drone/src/mqtt.cpp:131:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktoken[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  131 |  void delivery_complete([01;35m[Kmqtt::delivery_token_ptr token[m[K) override {}
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:[m[K At global scope:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:214:55:[m[K [01;31m[Kerror: [m[Kcannot declare member function ‘[01m[Kstatic void OffboardControl::sigint_handler(int)[m[K’ to have static linkage [[01;31m[K-fpermissive[m[K]
+  214 | static void OffboardControl::sigint_handler(int signum[01;31m[K)[m[K{
+      |                                                       [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/root/workspace/src/drone/src/offb_node.cpp:5[m[K:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:[m[K In static member function ‘[01m[Kstatic void OffboardControl::sigint_handler(int)[m[K’:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:215:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is unavailable for static member functions
+  215 |     RCLCPP_INFO([01;31m[Kthis[m[K -> get_logger(), "Shutting down...");
+      |                 [01;31m[K^~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:215:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is unavailable for static member functions
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:215:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  215 |     [01;31m[KRCLCPP_INFO[m[K(this -> get_logger(), "Shutting down...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:215:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  215 |     [01;31m[KRCLCPP_INFO[m[K(this -> get_logger(), "Shutting down...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:215:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  215 |     [01;31m[KRCLCPP_INFO[m[K(this -> get_logger(), "Shutting down...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/root/workspace/src/drone/src/offb_node.cpp:5[m[K:
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:215:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is unavailable for static member functions
+  215 |     RCLCPP_INFO([01;31m[Kthis[m[K -> get_logger(), "Shutting down...");
+      |                 [01;31m[K^~~~[m[K
+[01m[K/root/workspace/src/drone/src/offb_node.cpp:215:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is unavailable for static member functions
+  215 |     RCLCPP_INFO([01;31m[Kthis[m[K -> get_logger(), "Shutting down...");
+      |                 [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/node.dir/build.make:63: CMakeFiles/node.dir/src/offb_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
