@@ -15,7 +15,7 @@ using namespace px4_msgs::msg;
 
 std::array<float,3> global_pos;
 std::array<float,3> drone_pos = {0.0,0.0,0.0};
-std::array<float,3> expected_pos = {1.0,1.0,5.0};
+std::array<float,3> expected_pos = {0.0,0.0,2.0};
 
 PID pidx(3.0,0.6,1.5,0.1);
 PID pidy(3.0,0.6,1.5,0.1);

@@ -4371,8 +4371,6 @@ nlohmann/json.hpp
 -
 
 /root/workspace/src/drone/src/offb_node.cpp
-signal.h
--
 rclcpp/rclcpp.hpp
 /root/workspace/src/drone/src/rclcpp/rclcpp.hpp
 px4_msgs/msg/offboard_control_mode.hpp
