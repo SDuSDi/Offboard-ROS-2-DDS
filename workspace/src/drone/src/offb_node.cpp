@@ -15,7 +15,7 @@ using namespace px4_msgs::msg;
 
 std::array<float,3> global_pos;
 std::array<float,3> drone_pos = {0.0,0.0,0.0};
-std::array<float,3> expected_pos = {0.0,0.0,2.0};
+std::array<float,3> expected_pos = {17.0,23.0,4.0};
 
 PID pidx(3.0,0.6,1.5,0.1);
 PID pidy(3.0,0.6,1.5,0.1);
@@ -97,9 +97,9 @@ public:
                     this -> publish_trajectory(expected_pos[0], expected_pos[1], -expected_pos[2], set_pos);
                 }else{
                     this -> publish_trajectory(
-                        pidx.calculate(expected_pos[0], drone_pos[0]),
-                        pidy.calculate(expected_pos[1], drone_pos[1]),
-                        pidz.calculate(-expected_pos[2], drone_pos[2]),
+                        expected_pos[0],// pidx.calculate(expected_pos[0], drone_pos[0]),
+                        expected_pos[1],// pidy.calculate(expected_pos[1], drone_pos[1]),
+                        -expected_pos[2],// pidz.calculate(-expected_pos[2], drone_pos[2]),
                         set_pos
                     );
                 }
